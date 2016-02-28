@@ -6,4 +6,7 @@
     word-break: break-all !important;
     display: block !important;
   }
+  td.blob-code-inner {
+    display: table-cell !important;
+  }
 }
