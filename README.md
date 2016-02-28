@@ -1,3 +1,3 @@
 # GitHub-wrap
 
-Userstyle to wrap long lines on GitHub.
+Userstyle to wrap long code lines on GitHub.
