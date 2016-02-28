@@ -1,4 +1,4 @@
-@-moz-document domain("github.com") {
+@-moz-document domain("github.com"), domain("gist.github.com") {
   .blob-code-inner,
   .markdown-body pre > code,
   .markdown-body .highlight > pre {
