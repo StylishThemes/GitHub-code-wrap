@@ -13,6 +13,10 @@ Then:
 
 📦 [Install the usercss](https://github.com/StylishThemes/GitHub-code-wrap/raw/master/github-code-wrap.user.css) with Stylus or xStyle. Supports automatic updates.
 
+## Related
+
+&#x2764; [Code wrap toggle](https://github.com/StylishThemes/GitHub-Dark-Script#toggles) - This userscript is available on [GreasyFork](https://greasyfork.org/en/scripts/18789-github-toggle-code-wrap) & [OperUserJS](https://openuserjs.org/scripts/StylishThemes/GitHub_Toggle_Code_Wrap). It adds a toggle code wrap button within each code block to allow dynamic toggling of the code wrap.
+
 ## Contributions
 
 If you would like to contribute to this repository, please...
