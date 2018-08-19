@@ -11,9 +11,7 @@
 @preprocessor uso
 ==/UserStyle== */
 @-moz-document domain("github.com"), domain("gist.github.com") {
-  .blob-code-inner,
-  .markdown-body pre > code,
-  .markdown-body .highlight > pre {
+  .blob-code-inner, .markdown-body pre > code, .markdown-body .highlight > pre {
     white-space: pre-wrap !important;
     word-break: break-all !important;
     overflow-wrap: break-word !important;
