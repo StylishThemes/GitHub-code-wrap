@@ -14,16 +14,17 @@
     "semver": "^5.5.0",
     "stylelint": "^9.4.0",
     "stylelint-config-standard": "^18.2.0",
-    "updates": "^4.1.2"
+    "updates": "^4.1.2",
+    "ver": "^3.0.0"
   },
   "scripts": {
     "authors": "bash tools/authors",
     "clean": "npm run perfectionist && node tools/fix-perfectionist.js",
     "eslint": "eslint --quiet --color tools/*.js",
     "lint": "npm run eslint && npm run stylelint",
-    "major": "node tools/bump-version.js major && git add . && npm version -f major",
-    "minor": "node tools/bump-version.js minor && git add . && npm version -f minor",
-    "patch": "node tools/bump-version.js patch && git add . && npm version -f patch",
+    "major": "ver patch *.user.css",
+    "minor": "ver patch *.user.css",
+    "patch": "ver patch *.user.css",
     "perfectionist": "perfectionist github-code-wrap.user.css github-code-wrap.user.css --indentSize 2 --maxAtRuleLength 250",
     "stylelint": "stylelint --silent --color -- github-code-wrap.user.css",
     "test": "npm run eslint && npm run stylelint",
