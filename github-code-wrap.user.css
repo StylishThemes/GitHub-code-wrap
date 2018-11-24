@@ -20,4 +20,9 @@
   td.blob-code-inner {
     display: table-cell !important;
   }
+  /* this pseudo element with value " " causes a misalignment in wrapped lines, while
+     it seems to serve no obvious purpose, so let's remove this space. */
+  .blob-code-inner:before {
+    content: "" !important;
+  }
 }
