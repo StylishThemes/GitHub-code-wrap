@@ -18,6 +18,6 @@
     display: block !important;
   }
   td.blob-code-inner {
-    display: flex !important;
+    display: block !important;
   }
 }
