@@ -6,16 +6,18 @@
   "repository": "StylishThemes/GitHub-code-wrap",
   "license": "CC-BY-SA-4.0",
   "main": "github-code-wrap.user.css",
+  "engines": {
+    "node": ">=10"
+  },
   "devDependencies": {
-    "eslint": "^5.9.0",
-    "eslint-config-silverwind": "^2.0.10",
-    "fs-extra": "^7.0.1",
+    "eslint": "^5.16.0",
+    "eslint-config-silverwind": "^3.0.2",
     "perfectionist": "^2.4.0",
-    "semver": "^5.6.0",
-    "stylelint": "^9.8.0",
-    "stylelint-config-standard": "^18.2.0",
-    "updates": "^5.3.0",
-    "ver": "^3.0.0"
+    "semver": "^6.1.1",
+    "stylelint": "^10.0.1",
+    "stylelint-config-standard": "^18.3.0",
+    "updates": "^8.0.3",
+    "ver": "^4.3.0"
   },
   "scripts": {
     "authors": "bash tools/authors",
@@ -26,7 +28,7 @@
     "minor": "ver minor *.user.css",
     "major": "ver major *.user.css",
     "perfectionist": "perfectionist github-code-wrap.user.css github-code-wrap.user.css --indentSize 2 --maxAtRuleLength 250",
-    "stylelint": "stylelint --silent --color -- github-code-wrap.user.css",
+    "stylelint": "stylelint --color -- github-code-wrap.user.css",
     "test": "npm run eslint && npm run stylelint",
     "update": "updates -cu && npm install"
   }
