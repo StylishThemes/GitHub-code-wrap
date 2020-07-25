@@ -1,35 +1,21 @@
 {
-  "name": "github-code-wrap",
-  "title": "GitHub Code Wrap",
+  "name": "GitHub-code-wrap",
   "version": "1.0.10",
-  "description": "Userstyle to wrap code long lines on GitHub",
   "repository": "StylishThemes/GitHub-code-wrap",
-  "license": "CC-BY-SA-4.0",
-  "main": "github-code-wrap.user.css",
   "engines": {
     "node": ">=12"
   },
   "devDependencies": {
-    "eslint": "^6.6.0",
-    "eslint-config-silverwind": "^5.0.0",
-    "perfectionist": "^2.4.0",
-    "semver": "^6.3.0",
-    "stylelint": "^12.0.0",
-    "stylelint-config-standard": "^19.0.0",
-    "updates": "^9.0.1",
-    "versions": "7.0.2"
+    "stylelint": "13.6.1",
+    "stylelint-config-silverwind": "2.0.8",
+    "updates": "10.3.3",
+    "versions": "8.4.2"
   },
   "scripts": {
-    "authors": "bash tools/authors",
-    "clean": "npm run perfectionist && node tools/fix-perfectionist.js",
-    "eslint": "eslint --quiet --color tools/*.js",
-    "lint": "npm run eslint && npm run stylelint",
-    "patch": "versions patch *.user.css",
-    "minor": "versions minor *.user.css",
-    "major": "versions major *.user.css",
-    "perfectionist": "perfectionist github-code-wrap.user.css github-code-wrap.user.css --indentSize 2 --maxAtRuleLength 250",
-    "stylelint": "stylelint --color -- github-code-wrap.user.css",
-    "test": "npm run eslint && npm run stylelint",
+    "patch": "versions patch github-code-wrap.user.css",
+    "minor": "versions minor github-code-wrap.user.css",
+    "major": "versions major github-code-wrap.user.css",
+    "test": "stylelint --color -- github-code-wrap.user.css",
     "update": "updates -cu && npm install"
   }
 }
