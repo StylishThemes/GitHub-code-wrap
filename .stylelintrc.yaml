@@ -1,0 +1,8 @@
+extends: stylelint-config-silverwind
+
+rules:
+  scale-unlimited/declaration-strict-value: null
+  block-no-empty: null
+  selector-no-vendor-prefix: null
+  selector-attribute-quotes: null
+  declaration-property-value-no-unknown: null

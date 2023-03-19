@@ -3,19 +3,12 @@
   "version": "1.0.10",
   "repository": "StylishThemes/GitHub-code-wrap",
   "engines": {
-    "node": ">=12"
+    "node": ">=16"
   },
   "devDependencies": {
-    "stylelint": "13.6.1",
-    "stylelint-config-silverwind": "2.0.8",
-    "updates": "10.3.3",
-    "versions": "8.4.2"
-  },
-  "scripts": {
-    "patch": "versions patch github-code-wrap.user.css",
-    "minor": "versions minor github-code-wrap.user.css",
-    "major": "versions major github-code-wrap.user.css",
-    "test": "stylelint --color -- github-code-wrap.user.css",
-    "update": "updates -cu && npm install"
+    "stylelint": "15.3.0",
+    "stylelint-config-silverwind": "11.0.5",
+    "updates": "13.2.9",
+    "versions": "10.4.2"
   }
 }

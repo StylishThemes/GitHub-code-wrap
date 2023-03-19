@@ -1,28 +1,29 @@
-test: lint
-
-node_modules: yarn.lock
-	@yarn -s --pure-lockfile
+node_modules: package-lock.json
+	npm install --no-save
 	@touch node_modules
 
+.PHONY: test
+test: lint
+
+.PHONY: lint
 lint: node_modules
-	yarn -s run stylelint --color *.css
+	npx stylelint --color *.css
 
+.PHONY: update
 update: node_modules
-	yarn -s run updates -cu
-	yarn -s run rimraf node_modules
-	yarn -s
-	@touch yarn.lock
+	npx updates -cu
+	rm -rf node_modules package-lock.json
+	npm install
+	@touch node_modules
 
-patch: node_modules lint build
-	yarn -s run versions -pdC patch github-code-wrap.user.css
-	git push --tags origin master
+.PHONY: patch
+patch: node_modules test
+	npx versions -c 'make --no-print-directory build' patch package.json package-lock.json github-code-wrap.user.css
 
-minor: node_modules lint build
-	yarn -s run versions -pdC minor github-code-wrap.user.css
-	git push --tags origin master
+.PHONY: minor
+minor: node_modules test
+	npx versions -c 'make --no-print-directory build' minor package.json package-lock.json github-code-wrap.user.css
 
-major: node_modules lint build
-	yarn -s run versions -pdC major github-code-wrap.user.css
-	git push --tags origin master
-
-.PHONY: test lint update patch minor major
+.PHONY: major
+major: node_modules test
+	npx versions -c 'make --no-print-directory build' major package.json package-lock.json github-code-wrap.user.css
