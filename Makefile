@@ -18,12 +18,12 @@ update: node_modules
 
 .PHONY: patch
 patch: node_modules test
-	npx versions -c 'make --no-print-directory build' patch package.json package-lock.json github-code-wrap.user.css
+	npx versions patch package.json package-lock.json github-code-wrap.user.css
 
 .PHONY: minor
 minor: node_modules test
-	npx versions -c 'make --no-print-directory build' minor package.json package-lock.json github-code-wrap.user.css
+	npx versions minor package.json package-lock.json github-code-wrap.user.css
 
 .PHONY: major
 major: node_modules test
-	npx versions -c 'make --no-print-directory build' major package.json package-lock.json github-code-wrap.user.css
+	npx versions major package.json package-lock.json github-code-wrap.user.css
