@@ -15,5 +15,4 @@ jobs:
         with:
           node-version: 18
       - uses: xt0rted/stylelint-problem-matcher@v1
-      - run: |
-        make test
+      - run: make test
