@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         GitHub Code Wrap
-@version      1.0.11
+@version      1.1.0
 @description  Userstyle to wrap long code lines on GitHub
 @namespace    StylishThemes
 @author       StylishThemes
@@ -22,6 +22,7 @@
     white-space: pre-wrap !important;
     overflow-wrap: anywhere !important;
     display: block !important;
+    word-break: break-all !important;
   }
   body:not(.nowrap) td.blob-code-inner {
     display: table-cell !important;
