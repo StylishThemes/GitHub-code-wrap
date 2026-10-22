@@ -1,3 +1,5 @@
+**Moved:** this style lives in [GitHub Dark](https://github.com/StylishThemes/GitHub-Dark) now, install [github-code-wrap.user.css](https://raw.githubusercontent.com/StylishThemes/GitHub-Dark/master/github-code-wrap.user.css).
+
 # GitHub-code-wrap [![tag](https://img.shields.io/github/tag/StylishThemes/GitHub-code-wrap.svg)](https://github.com/StylishThemes/GitHub-code-wrap/tags)
 
 Userstyle to wrap long code lines on GitHub.
